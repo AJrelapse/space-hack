@@ -26,7 +26,7 @@ function SideNavBar() {
       </div>
 
       <Link to="/cargoTracking">
-        <Button className="flex items-center gap-2 w-full mt-8 rounded-full text-lg font-medium transition-all hover:scale-105">
+        <Button className="flex items-center gap-2 w-full mt-8 rounded-full text-lg font-medium transition-all hover:scale-105 text-white">
           <Plus className="w-5 h-5" /> Cargo Tracking
         </Button>
       </Link>

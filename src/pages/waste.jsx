@@ -3,7 +3,7 @@ import WasteManagement from '../components/WasteManagement';
 
 function Waste() {
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div>
       <div className="hidden md:block md:w-64 bg-white shadow-md h-full fixed">
         <SideNavBar />
       </div>
