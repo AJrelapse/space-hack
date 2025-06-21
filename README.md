@@ -77,14 +77,3 @@ A full-stack cargo management tool designed for efficient stowage planning and t
 - Validate placement based on size and mass.
 - Save or update cargo configuration.
 
-
-## Future Improvements
-
-- Integration with NASA cargo manifest data
-- Real-time astronaut checklist synchronization
-- Mission-specific cargo templates
-- VR support for immersive interaction
-
-## License
-
-This project is licensed under the MIT License.
