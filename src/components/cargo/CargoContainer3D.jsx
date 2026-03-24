@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Box, Text } from '@react-three/drei';
+import { OrbitControls, Box} from '@react-three/drei';
 import { getContainerItems } from '../../services/apiService';
 
 const CargoContainer3D = () => {

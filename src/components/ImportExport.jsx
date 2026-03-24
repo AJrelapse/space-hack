@@ -76,6 +76,14 @@ const ImportExport = () => {
         >
           Upload Items
         </button>
+
+        <a 
+          href="/samples/input_items_given.csv" 
+          download 
+          className="text-blue-600 text-sm underline mt-1 inline-block"
+        >
+          Download Sample Items CSV
+        </a>
       </div>
 
       <div className="mb-4">
@@ -92,6 +100,14 @@ const ImportExport = () => {
         >
           Upload Containers
         </button>
+
+        <a 
+          href="/samples/input_containers_given.csv" 
+          download 
+          className="text-green-600 text-sm underline mt-1 inline-block"
+        >
+          Download Sample Containers CSV
+        </a>
       </div>
 
       <div className="mb-4">
