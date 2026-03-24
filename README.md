@@ -1,79 +1,54 @@
-# Cargo Stowage Management System
+# Interstellar
 
-A full-stack cargo management tool designed for efficient stowage planning and tracking aboard the International Space Station (ISS). Developed as part of a space hackathon, this system streamlines the process of allocating cargo within limited spatial constraints using a visual and data-driven approach.
+**Interstellar** is a 3D bin packing optimization tool developed to address complex real-world space utilization challenges in warehouse logistics and inventory management. It focuses on efficiently organizing 3D objects inside a constrained space, considering factors such as item priority, accessibility, orientation, and group-based dependencies.
+
+## Problem Statement
+
+The problem involves optimal space utilization in constrained 3D environments, such as warehouses or storage containers. It includes:
+
+- Packing 3D cuboidal objects into a larger cuboidal container.
+- Considering item priority levels, accessibility, rotational flexibility, and group-based constraints.
+- Ensuring that items with higher priority are more accessible.
+- Maintaining physical feasibility (no overlaps and full containment).
+
+The objective is to maximize space utilization while preserving item accessibility and handling constraints.
 
 ## Features
 
-- Visual 3D model of cargo space for accurate stowage representation
-- Real-time addition, movement, and removal of cargo items
-- Automated validation for volume and weight constraints
-- Interactive UI with drag-and-drop cargo placement
-- Persistent data storage and retrieval for mission continuity
-- Admin panel for cargo upload, editing, and monitoring
+- **Modified First-Fit Decreasing (FFD)** and **Layer-Based First-Fit Decreasing (LBFFD)** algorithms with priority handling.
+- **Rotation optimization** for improved packing efficiency.
+- **Group-based dependency handling** using directed graphs.
+- **Accessibility scoring** to ensure retrievability of high-priority items.
+- Planned use of **Octree data structures** for efficient spatial representation.
 
-## Tech Stack
+## Getting Started
 
-**Frontend**
-- ReactJS
-- Three.js (3D Visualization)
-- Tailwind CSS
+### Prerequisites
 
-**Backend**
-- FastAPI (Python)
-- PostgreSQL (for structured cargo data)
-- RESTful API architecture
+- Python 3.8 or higher
+- Docker 
+- pip 
 
-**Deployment**
-- Vercel (Frontend)
-- Render / Railway / Localhost (Backend)
+### Installation
 
-## Installation
+1. Clone the repository and navigate to the project directory:
 
-### Backend (FastAPI)
-
-1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/space-hack
-   cd space-hack/backend
+   git clone https://github.com/gokulsivas/space_cargo_management.git
+   cd space_cargo_management
+
    ```
 
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+2. **Docker Setup**:
+   - Build the Docker image:
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+     ```bash
+     docker build -t space-cargo-management .
+     ```
 
-4. Run the API:
-   ```bash
-   uvicorn main:app --reload
-   ```
+   - Run the Docker container:
 
-### Frontend (React)
-
-1. Navigate to the frontend folder:
-   ```bash
-   cd ../frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-## Usage
-
-- Access the 3D cargo bay visualization in the dashboard.
-- Drag and drop new cargo items into the stowage layout.
-- Validate placement based on size and mass.
-- Save or update cargo configuration.
+     ```bash
+     docker run --network=host space-cargo-management
+     ```
 
