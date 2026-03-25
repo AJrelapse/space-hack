@@ -1,4 +1,0 @@
-timestamp,userId,action_type,itemId,details
-2026-03-24T18:30:28.359585+00:00,"",Import Items,0,"{""from_container"": """", ""to_container"": """", ""reason"": ""Imported 2000 items successfully.""}"
-2026-03-24T18:30:33.104824+00:00,"",Import Containers,0,"{""from_container"": """", ""to_container"": """", ""reason"": ""Imported 56 containers successfully.""}"
-2026-03-24T18:30:34.446022+00:00,"",Export Arrangement,0,"{""from_container"": """", ""to_container"": """", ""reason"": ""Exported 2000 placements successfully""}"
